@@ -1,0 +1,11 @@
+tor:
+    build: ./tor
+    ports:
+        - "127.0.0.1:9050:9050"
+
+privoxy:
+    build: ./privoxy
+    ports:
+        - "127.0.0.1:8118:8118"
+    links:
+        - tor:tor
