@@ -1315,7 +1315,9 @@ buffer-limit 4096
 #       forward           localhost/     .
 #
 #
+forward-socks4 / tor:9050 .
 forward-socks4a / tor:9050 .
+forward-socks5 / tor:9050 .
 #
 #  5.3. forwarded-connect-retries
 #  ===============================

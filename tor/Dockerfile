@@ -24,6 +24,7 @@ ADD  tor/torrc /etc/tor/torrc
 ADD  tor/torsocks.conf /etc/torsocks.conf
 
 # Ports
+EXPOSE 9053
 EXPOSE 9050
 
 # User env
