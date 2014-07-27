@@ -41,8 +41,10 @@ ENV HOME /home/iceweasel
 # Adds a custom non root user with home directory
 RUN adduser --disabled-password --home=/home/iceweasel --gecos "" iceweasel
 
-#RUN chown -R iceweasel /home/iceweasel/.mozilla/
+RUN mkdir /data
+RUN ln -s /home/iceweasel/.mozilla/firefox /data/firefox
 
+VOLUME ["/data"]
 # In the user context
 USER iceweasel
 #ADD ./profile/ /home/iceweasel/.mozilla/firefox/
