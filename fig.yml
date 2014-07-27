@@ -14,7 +14,7 @@ privoxy:
 dnsmasq:
     build: ./dnsmasq
     ports:
-        - "127.0.0.1:53:53"
+        - "172.17.42.1:53:53"
     links:
         - tor:tor
 
