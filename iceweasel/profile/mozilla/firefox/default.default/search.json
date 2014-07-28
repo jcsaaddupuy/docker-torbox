@@ -1,0 +1,82 @@
+{
+    "version": 7,
+    "buildID": "20140319080549",
+    "locale": "en-US",
+    "directories": {
+        "/etc/iceweasel/searchplugins/common": {
+            "lastModifiedTime": 1406502274000,
+            "engines": [
+                {
+                    "_id": "[app]/duckduckgo.xml",
+                    "_name": "DuckDuckGo",
+                    "_hidden": false,
+                    "description": "DuckDuckGo Search",
+                    "__searchForm": "http://3g2upl4pq6kufc4m.onion/",
+                    "_iconURL": "",
+                    "_urls": [
+                        {
+                            "template": "http://3g2upl4pq6kufc4m.onion/",
+                            "rels": [],
+                            "params": [
+                                {
+                                    "name": "q",
+                                    "value": "{searchTerms}"
+                                }
+                            ]
+                        }
+                    ],
+                    "filePath": "/etc/iceweasel/searchplugins/common/duckduckgo.xml",
+                    "_hasPreferredIcon": null,
+                    "queryCharset": "UTF-8"
+                }
+            ]
+        },
+        "/etc/iceweasel/searchplugins/locale/en-US": {
+            "lastModifiedTime": 1406502273000,
+            "engines": [
+                {
+                    "_id": "[app]/wikipedia.xml",
+                    "_name": "Wikipedia (en)",
+                    "_hidden": false,
+                    "description": "Wikipedia, the free encyclopedia",
+                    "__searchForm": "http://en.wikipedia.org/wiki/Special:Search",
+                    "_iconURL": "",
+                    "_urls": [
+                        {
+                            "template": "http://en.wikipedia.org/w/api.php",
+                            "rels": [],
+                            "type": "application/x-suggestions+json",
+                            "params": [
+                                {
+                                    "name": "action",
+                                    "value": "opensearch"
+                                },
+                                {
+                                    "name": "search",
+                                    "value": "{searchTerms}"
+                                }
+                            ]
+                        },
+                        {
+                            "template": "http://en.wikipedia.org/wiki/Special:Search",
+                            "rels": [],
+                            "params": [
+                                {
+                                    "name": "search",
+                                    "value": "{searchTerms}"
+                                },
+                                {
+                                    "name": "sourceid",
+                                    "value": "Mozilla-search"
+                                }
+                            ]
+                        }
+                    ],
+                    "filePath": "/etc/iceweasel/searchplugins/locale/en-US/wikipedia.xml",
+                    "_hasPreferredIcon": null,
+                    "queryCharset": "UTF-8"
+                }
+            ]
+        }
+    }
+}

@@ -18,11 +18,6 @@ dnsmasq:
     links:
         - tor:tor
 
-datafirefox:
-    build: ./data
-    volumes:
-        - /tmp/firefox:/data
-
 iceweasel:
     build: ./iceweasel
     links:
@@ -31,8 +26,11 @@ iceweasel:
         - dnsmasq:dns
     volumes:
         - /tmp/.X11-unix:/tmp/.X11-unix
-    volumes_from:
-        - datafirefox
+    environment:
+        - DISPLAY=unix:0
+    dns:
+        - "172.17.42.1"
+
     environment:
         - DISPLAY=unix:0
     dns:
