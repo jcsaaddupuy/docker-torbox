@@ -12,7 +12,7 @@
 user_pref("browser.startup.homepage", "https://check.torproject.org/|http://3g2upl4pq6kufc4m.onion/");
 
 // set the default search engine
-user_pref("browser.search.defaultenginename", "DuckDuckGo");
+user_pref("browser.search.defaultenginename", "DuckDuckGoTor");
 
 // Disable DNS prefetch
 user_pref("network.dns.disablePrefetch", true);
