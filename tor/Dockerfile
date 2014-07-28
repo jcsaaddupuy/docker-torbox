@@ -27,6 +27,8 @@ ADD  tor/torsocks.conf /etc/torsocks.conf
 EXPOSE 9053
 EXPOSE 9050
 
+RUN apt-get install irssi -y
+
 # User env
 USER tor
 WORKDIR /home/tor
