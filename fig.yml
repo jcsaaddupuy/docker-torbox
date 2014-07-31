@@ -31,6 +31,13 @@ iceweasel:
     dns:
         - "172.17.42.1"
 
+xchat:
+    build: ./xchat
+    links:
+        - tor:tor
+        - dnsmasq:dns
+    volumes:
+        - /tmp/.X11-unix:/tmp/.X11-unix
     environment:
         - DISPLAY=unix:0
     dns:
