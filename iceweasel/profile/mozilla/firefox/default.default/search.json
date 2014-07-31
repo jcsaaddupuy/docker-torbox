@@ -8,7 +8,7 @@
             "engines": [
                 {
                     "_id": "[app]/duckduckgo.xml",
-                    "_name": "DuckDuckGo",
+                    "_name": "DuckDuckGoTor",
                     "_hidden": false,
                     "description": "DuckDuckGo Search",
                     "__searchForm": "http://3g2upl4pq6kufc4m.onion/",
@@ -16,6 +16,29 @@
                     "_urls": [
                         {
                             "template": "http://3g2upl4pq6kufc4m.onion/",
+                            "rels": [],
+                            "params": [
+                                {
+                                    "name": "q",
+                                    "value": "{searchTerms}"
+                                }
+                            ]
+                        }
+                    ],
+                    "filePath": "/etc/iceweasel/searchplugins/common/duckduckgo.xml",
+                    "_hasPreferredIcon": null,
+                    "queryCharset": "UTF-8"
+                },
+                {
+                    "_id": "[app]/duckduckgo.xml",
+                    "_name": "DuckDuckGo",
+                    "_hidden": false,
+                    "description": "DuckDuckGo Search",
+                    "__searchForm": "https://duckduckgo.com/",
+                    "_iconURL": "",
+                    "_urls": [
+                        {
+                            "template": "https://duckduckgo.com/",
                             "rels": [],
                             "params": [
                                 {
